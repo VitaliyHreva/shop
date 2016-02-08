@@ -1,23 +1,124 @@
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
+<div class="container first">
+      <div class="section">
+        <div class="row vertical-center-row text-center">
+          <div class="col-sm-6 content">
+            <h1 class="first-responsive">First responsive website</h1><br>
+            <p class="bootstrap-is">Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.</p>
+            <h2 class="share">Follow us on social networks</h2><br>
+              <div class="soc-buttons" ><br>
+                <a href="{{buttons.href}}" ng-repeat="buttons in socButtons">
+                  <div class="green-square green-border-2px">
+                    <i class="{{buttons.icon}}"></i>
+                  </div>
+                </a>
+              </div>
+          </div>
+          <div class="green-border">
+            <button type="button" class="button green-border-2px">This is button</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
-
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
-</div>
+      <div class="container second">
+        <div class="row vertical-center-row text-center">
+            <h2 class="options">OUR SERVICES</h2><br>
+            <hr class="hr">
+          <div class="container-fluid">
+            <div class="layout">
+              <div ng-repeat="services in ourServices" class="col-md-4"> 
+                <div>
+                  <i class="{{services.icon}}"></i>
+                  <h2 class="random-text-columns">{{services.title}}</h2>
+                  <h3 class="random-text">{{services.description}}</h3>
+                </div>
+              </div>   
+            </div>
+          </div>
+        </div>
+      </div><br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="container third">
+        <div class="pricing-tables attached">
+        <div class="row vertical-center-row text-center">
+          <h2 class="options"> PRICING OPTIONS</h2>
+          <hr class="hr">
+            <div class="col-sm-3 col-md-3" ng-repeat="tables in pricingTables">
+              <div class="plan first">
+                <div class="price">
+                  <div class="insade">
+                    <i class="{{tables.currency}}"></i>
+                    <span class="amt annual is-visible">{{tables.price}}</span>
+                    <h4 class="per">{{tables.date}}</h4>
+                  </div>
+                </div>
+                <div class="head">
+                  <h2>{{tables.head}}</h2>
+                </div><br>
+                <ul class="features">
+                  <li><h5><i class="{{tables.iconPrint}}"></i>{{tables.account}}</h5></li><br>
+                  <li><h5><i class="{{tables.iconClock}}"></i>{{tables.projects}}</h5></li><br>
+                  <li><h5><i class="{{tables.iconTrash}}"></i>{{tables.required}}</h5></li><br>
+                </ul> 
+                <button type="button" class="btn green-border-2px">BOOK ORDER</button>
+              </div>
+            </div>
+         </div>
+      </div>
+    </div><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container fourth">
+      <div class="row vertical-center-row text-center">
+        <h2 class="options">OUR WORKS</h2>  
+        <hr class="hr">
+          <button ng-click="categoryName = '.categories'" type="button" class="btn-our-works green-border-2px"+>All</button>
+          <button ng-click="categoryName = '.html-img'" type="button" class="btn-our-works green-border-2px">HTML</button>
+          <button ng-click="categoryName = '.css-img'" type="button" class="btn-our-works green-border-2px">CSS</button>
+          <button ng-click="categoryName = '.code-img'" type="button" class="btn-our-works green-border-2px">CODE</button>
+          <button ng-click="categoryName = '.script-img'" type="button" class="btn-our-works green-border-2px">SCRIPT</button><br>
+          <br>
+          <br>
+        <div class="container-fluid">
+          <div class="layout" ng-repeat="works in ourWorks">
+            <div ng-show="{{works.show}}" class="{{works.class}}">
+              <div class="columns-image-1 green-border-1px">
+                <img class="img-columns" alt="" src="{{works.image}}" width="100%" height="100%">
+                <p class="lorem">{{works.text}}</p>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div><br>
+    <br>
+    <br>
+    <br>
+    <br>
+      <div class="container fifth">
+        <div class="tables-attached">
+          <div class="row vertical-center-row text-center">
+            <h2 class="options"> TEAM MEMBERS</h2>
+            <hr class="hr">
+            <div class="col-sm-3 col-md-3" ng-repeat="team in teamMembers">
+              <div class="team first">
+                <img class="img-team" alt="" src="{{team.cover}}" width="100%" height="100%"><br>
+              <div class="team-content"><br><br>
+                <a>
+                  <i class="{{team.icon}} twitter-team"></i>
+                </a>  
+                <p class="team-text">{{team.name}}</p>
+                <p class="tean-text-2">{{team.work}}</p>
+                <p class="team-text-3">{{team.about}}</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

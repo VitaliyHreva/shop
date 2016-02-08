@@ -1,0 +1,77 @@
+html, body {
+  height: 100%;
+}
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment:fixed;
+}
+form {
+  background: rgba(0,0,0,0.5);
+  margin: 150px auto 0px auto;
+  position: relative;
+  width: 550px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid rgba(0,0,0,0.5);
+  border: inset 1px solid #333;
+  box-shadow: 0 2px 2px rgba(10, 10, 10, 0.06);
+  color: lightgrey;
+  font-family: Bolt;
+}
+.btn {
+  background-color: rgba(0,0,0,1);
+  color: lightgrey;
+  font-family: Bolt;
+}
+.form-input {
+  background-color: rgba(0,0,0,0.8);
+  display: block;
+  width: 90%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-image: none;
+  border: 1px solid black;
+  border-radius: 4px;
+  color: lightgrey;
+}
+.login-social {
+  background-color: rgba(0,0,0,1);
+  color: lightgrey;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  white-space: nowrap;
+  box-shadow: none;
+  border: 2px solid rgba(0,0,0,1);;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  margin: 0 5px;
+}
+.fa-google-plus {
+  margin-left: -4px;
+}
+.fa-facebook {
+  margin-left: -2px;
+}
+.login-social-one:hover {
+  background-color: #dd4b39 ;
+  border: 2px solid #dd4b39;
+}
+.login-social-two:hover {
+  background-color: #3b5998;
+  border: 2px solid #3b5998;
+}
+.login-social-one:focus, .login-social-two:focus  {
+  outline: none;  
+}
