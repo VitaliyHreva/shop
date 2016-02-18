@@ -20,7 +20,7 @@ angular
   .config(function ($routeProvider) {
     $routeProvider
       .when('/home', {templateUrl: 'views/main.html', controller: 'MainCtrl', controllerAs: 'main'})
-      .when('/login', {templateUrl: 'views/form.html', controller: 'LoginController', css: 'styles/common/login.scss'})
+      .when('/login', {templateUrl: 'views/form.html', controller: 'MainCtrl', controllerAs: 'main'})
       .when('/registration', {templateUrl: 'views/form_registration.html'})
       .otherwise({
         redirectTo: '/'
