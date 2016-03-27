@@ -1,42 +1,7 @@
 'use strict';
 
-/**
- * @ngdoc function
- * @name App.controller:MainCtrl
- * @description
- * # MainCtrl
- * Controller of the App
- */
 angular.module('App')
-	.service('loginService', function ($http) {
-		return {
-			login:function (user, scope) {
-				console.log(user)
-				if (user.login == 'vitalik' || user.login == 'hreva99@gmail.com' &&  user.password == '12345' ) alert('succses login');
-				else { 
-					scope.msgTxt = 'Incorrect username or password!', 
-					$('input').css('border', '1px solid red'),
-					$('#login-password').val('');
-				}
-			}
-		}
-	})
-  .controller('MainCtrl', function ($scope, loginService) {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-    $scope.msgTxt = '';
-    $scope.login = function (user) {
-      loginService.login(user, $scope)
-    }
-    $scope.submitForm = function() {
-        // check to make sure the form is completely valid
-        if ($scope.userForm.$valid) {
-            console.log('our form is amazing');
-        }
-    };
+  .controller('MainCtrl', function ($scope) {
     $scope.ourServices = [
     	{
     		icon: 'fa fa-file-o', 
