@@ -21,6 +21,22 @@ angular.module('App')
       
       {
         url: 'https://www.youtube.com/embed/SdmpBeLrzys'  
+      },
+
+      {
+        url: 'https://www.youtube.com/embed/K1uj2qeBor4'
+      },
+
+      {
+        url: 'https://www.youtube.com/embed/yUMcDQlVtQE'
+      },
+
+      {
+        url: 'https://www.youtube.com/embed/o6cY6BtDK4E'
+      },
+
+      {
+        url: 'https://www.youtube.com/embed/SEyDminvr7Q'
       }
     ]
   });

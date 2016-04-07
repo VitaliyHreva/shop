@@ -15,6 +15,6 @@ angular
       .when('/home', {templateUrl: 'views/main.html', controller: 'MainCtrl'})
       .when('/login', {templateUrl: 'views/form.html', controller: 'LoginCtrl',  services: 'loginService'}) //move logic to LoginCtrl
       .when('/registration', {templateUrl: 'views/form_registration.html', controller: 'LoginCtrl', services: 'loginService'}) //- loginctrl
-      .when('/shop', {templateUrl: 'views/shop.html', controller: 'ShopCtrl', services: 'loginService'})
+      .when('/shop', {templateUrl: 'views/shop.html', controller: 'ShopCtrl', services: 'loginService', directives: 'facebookShare'})
       .otherwise({redirectTo: '/'});
   });

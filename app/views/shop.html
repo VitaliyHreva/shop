@@ -1,3 +1,11 @@
-<div ng-repeat='video in videos'>
-	<iframe width="560" height="315" src="{{trustSrc(video.url)}}" frameborder="0" allowfullscreen></iframe>
+<br>
+<br>
+<br>
+<div class="vid-container">
+  <a class="class-vid" ng-repeat='video in videos'>
+    <figure>
+      <iframe  width="560" height="315" src="{{trustSrc(video.url)}}" frameborder="0" allowfullscreen></iframe>
+      <button  class="video-share btn btn-primary col-sm-12 col-md-12 col-xs-12">Share</button>
+    </figure>
+  </a>
 </div>

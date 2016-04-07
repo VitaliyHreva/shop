@@ -1,0 +1,54 @@
+body {
+  width: 80%;
+  margin: 30px auto;
+  font-family: sans-serif;
+}
+figure {
+  margin: 0;
+}
+
+.vid-container {
+  font-size: 0;
+}
+
+.class-vid {
+  font-size: 16px;
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: 8px;
+  width: calc(50% - 4px);
+  margin-right: 8px;
+  position: relative;
+}
+.class-vid:nth-of-type(2n) {
+  margin-right: 0;
+}
+figure {
+  margin: 0;
+}
+iframe {
+  border: none;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  background: #ccc;
+  transition: transform .2s ease-in-out;
+}
+.video-share {
+	border-radius: 31px 31px 1px 1px;
+	margin-top: -33px
+}
+@media screen and (min-width: 50em) {
+  .class-vid {
+    width: calc(25% - 6px);
+  }
+  
+  .class-vid:nth-of-type(2n) {
+    margin-right: 8px;
+  }
+  
+  .class-vid:nth-of-type(4n) {
+    margin-right: 0;
+  }
+}
+
