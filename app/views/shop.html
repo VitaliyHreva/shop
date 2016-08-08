@@ -1,11 +1,23 @@
-<br>
-<br>
-<br>
-<div class="vid-container">
+<div class="vid-container container-fluid">
   <a class="class-vid" ng-repeat='video in videos'>
     <figure>
-      <iframe  width="560" height="315" src="{{trustSrc(video.url)}}" frameborder="0" allowfullscreen></iframe>
-      <button  class="video-share btn btn-primary col-sm-12 col-md-12 col-xs-12">Share</button>
+      <img  src="{{video.cover}}" frameborder="0" allowfullscreen>
+      <div data-href="{{video.url}}" class="fb-share-button"  data-layout="button" data-size="small" data-mobile-iframe="true"></div>
     </figure>
   </a>
 </div>
+
+<!-- <img src="https://img.youtube.com/vi/K1uj2qeBor4/mqdefault.jpg"  width="320" height="180">
+ -->
+
+<script>
+
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/uk_UA/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+</script>
