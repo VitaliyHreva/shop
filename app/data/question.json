@@ -1,0 +1,47 @@
+[
+  {
+    "text": "The earth is round?",
+    "answers": [
+    	{"text": "Yes", "is_correct": "yes"}, 
+    	{"text": "No", "is_correct": "no"},
+    	{"text": "Maybe", "is_correct": "no"},
+    	{"text": "Don`t know", "is_correct": "no"}
+    ]
+  },
+  {
+  	"text": "Have you be famous one day ?",
+		"answers": [
+			{"text": "Yes", "is_correct": "no"},
+    	{"text": "No", "is_correct": "no"},
+    	{"text": "Maybe", "is_correct": "yes"},
+    	{"text": "Don`t know", "is_correct": "no"}
+    ]
+  },
+  {
+  	"text": "Are you happy with your life?",
+		"answers": [
+			{"text": "Yes", "is_correct": "yes"},
+    	{"text": "No", "is_correct": "no"},
+    	{"text": "Maybe", "is_correct": "no"},
+    	{"text": "Don`t know", "is_correct": "no"}
+    ]
+  },
+  {
+  	"text": "Have you awer it bugger?",
+		"answers": [
+			{"text": "Yes", "is_correct": "no"},
+    	{"text": "No", "is_correct": "yes"},
+    	{"text": "Maybe", "is_correct": "no"},
+    	{"text": "Don`t know", "is_correct": "no"}
+    ]
+  },
+  {
+  	"text": "Have old are you?",
+		"answers": [
+			{"text": "Yes", "is_correct": "no"},
+    	{"text": "No", "is_correct": "no"},
+    	{"text": "Maybe", "is_correct": "no"},
+    	{"text": "Don`t know", "is_correct": "no"}
+    ]
+  }
+]

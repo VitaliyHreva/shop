@@ -1,6 +1,6 @@
 body {
   width: 90%;
-  margin: 80px;
+  margin: 5%;
   font-family: sans-serif;
 }
 figure {
@@ -51,4 +51,14 @@ iframe {
     margin-right: 0;
   }
 }
-
+.image {
+  width: 100%;
+  position: relative;
+  padding-top: 25.7%;
+}
+/*.image:before {
+    content: "";
+  display: block;
+  padding-top: 25%;
+}
+*/

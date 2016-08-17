@@ -1,0 +1,17 @@
+<div class="text-center">
+	<h2>
+		<b>Question:</b> <i>{{currentQuestion.text}}</i>
+	</h2>
+</div>
+<br>
+<div class="answer text-center row">
+	<h3><b>Please answer below:</b></h3>
+	<div ng-repeat="answer in currentQuestion.answers" class="col-xs-6">
+		<br>
+  	<button class="btn btn-success btn-lg col-xs-12" ng-click='answering(answer.is_correct)'>{{answer.text}}</button>
+  </div>
+	<div class="col-xs-12">
+		<br>
+		<button class="btn btn-success btn-lg col-xs-12" ng-click='answering("yes")'>No correct answers</button>
+	</div>
+  

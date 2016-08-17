@@ -1,11 +1,14 @@
 <div class="vid-container container-fluid">
   <a class="class-vid" ng-repeat='video in videos'>
     <figure>
-      <img  src="{{video.cover}}" frameborder="0" allowfullscreen>
-      <div data-href="{{video.url}}" class="fb-share-button"  data-layout="button" data-size="small" data-mobile-iframe="true"></div>
+      <img class="image" src="{{video.cover}}" frameborder="0" allowfullscreen>
+      <div data-href="{{video.url}}" class="fb-share-button"  layout="icon" data-size="large" data-mobile-iframe="true"></div>
     </figure>
   </a>
 </div>
+
+
+
 
 <script>
 
