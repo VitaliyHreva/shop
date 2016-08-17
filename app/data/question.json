@@ -2,46 +2,46 @@
   {
     "text": "The earth is round?",
     "answers": [
-    	{"text": "Yes", "is_correct": "yes"}, 
-    	{"text": "No", "is_correct": "no"},
-    	{"text": "Maybe", "is_correct": "no"},
-    	{"text": "Don`t know", "is_correct": "no"}
+    	{"text": "nu tak vazko podumatu vidpovidi?", "is_correct": true}, 
+    	{"text": "No", "is_correct": false},
+    	{"text": "Maybe", "is_correct": false},
+    	{"text": "Don`t know", "is_correct": false}
     ]
   },
   {
   	"text": "Have you be famous one day ?",
 		"answers": [
-			{"text": "Yes", "is_correct": "no"},
-    	{"text": "No", "is_correct": "no"},
-    	{"text": "Maybe", "is_correct": "yes"},
-    	{"text": "Don`t know", "is_correct": "no"}
+			{"text": "Yeqs", "is_correct": false},
+    	{"text": "Noq", "is_correct": false},
+    	{"text": "Maybe", "is_correct": true},
+    	{"text": "Don`t know", "is_correct": false}
     ]
   },
   {
   	"text": "Are you happy with your life?",
 		"answers": [
-			{"text": "Yes", "is_correct": "yes"},
-    	{"text": "No", "is_correct": "no"},
-    	{"text": "Maybe", "is_correct": "no"},
-    	{"text": "Don`t know", "is_correct": "no"}
+			{"text": "Yeqs", "is_correct": true},
+    	{"text": "Noq", "is_correct": false},
+    	{"text": "Maybe", "is_correct": false},
+    	{"text": "Don`t know", "is_correct": false}
     ]
   },
   {
   	"text": "Have you awer it bugger?",
 		"answers": [
-			{"text": "Yes", "is_correct": "no"},
-    	{"text": "No", "is_correct": "yes"},
-    	{"text": "Maybe", "is_correct": "no"},
-    	{"text": "Don`t know", "is_correct": "no"}
+			{"text": "Yeqs", "is_correct": false},
+    	{"text": "Noq", "is_correct": true},
+    	{"text": "Maybe", "is_correct": false},
+    	{"text": "Don`t know", "is_correct": false}
     ]
   },
   {
   	"text": "Have old are you?",
 		"answers": [
-			{"text": "Yes", "is_correct": "no"},
-    	{"text": "No", "is_correct": "no"},
-    	{"text": "Maybe", "is_correct": "no"},
-    	{"text": "Don`t know", "is_correct": "no"}
+			{"text": "Yeqs", "is_correct": false},
+    	{"text": "Noq", "is_correct": false},
+    	{"text": "Maybe", "is_correct": false},
+    	{"text": "Don`t know", "is_correct": false}
     ]
   }
 ]
